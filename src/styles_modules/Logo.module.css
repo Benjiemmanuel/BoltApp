@@ -1,0 +1,22 @@
+.titleContainer {
+  position: relative;
+  color: #ff659b;
+  font-family: serif;
+  font-size: 43px;
+  height: 180px;
+  font-weight: bold;
+  display: inline-block;
+}
+.oContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.dot {
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ff659b;
+  font-size: 70px;
+}

@@ -1,0 +1,160 @@
+/* Desktop Styles */
+.overall {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: auto;
+}
+.landingPageContainer {
+  text-align: start;
+  background-color: #f9f9f9;
+  margin: 0;
+  height: 40vh;
+  padding-left: 30px;
+}
+
+.headerContainer {
+  background-color: transparent;
+}
+
+.horizontalLine {
+  width: 6%;
+  height: 3px;
+  background-color: #ff659b;
+  margin: 0px 0px 10px 0px;
+}
+
+.textContainer {
+  font-size: 25px;
+  font-family: sans-serif;
+  color: #2d2d6a;
+  font-weight: 500;
+}
+p {
+  height: 5px;
+  padding-top: 5px;
+}
+
+/* LandingPageSectionTwo  Styles */
+.container_section_two {
+  background-color: #ff659b;
+  height: 60vh;
+  clip-path: polygon(0 40%, 100% 20%, 100% 100%, 0 100%);
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 35px;
+  padding-top: 30px;
+}
+
+.text {
+  color: #f9f9f9;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 2px;
+  margin-top: 70px;
+  height: 15px;
+}
+.flag {
+  margin-top: 15px;
+  width: 23px;
+  height: 13px;
+}
+.countryCode {
+  color: #f9f9f9;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.inputContainer {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.innerContainer {
+  display: flex;
+  height: 50px;
+  box-sizing: border-box;
+  flex-direction: column;
+  text-align: center;
+  align-items: start;
+}
+
+.flagContainer {
+  display: flex;
+  color: #f9f9f9;
+  justify-content: start;
+  gap: 5px;
+  align-items: center;
+}
+.horizontalLineOne {
+  width: 300px;
+  height: 2px;
+  background-color: #f9f9f9;
+  margin-top: 5px;
+}
+.phoneNumber {
+  color: #ffff;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.horizontalLineTwo {
+  width: 500px;
+  height: 2px;
+  background-color: #f9f9f9;
+  margin-top: 5px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .overall {
+    height: auto;
+  }
+  .container_section_two {
+    height: 65vh;
+    padding-left: 35px;
+    padding-top: 80px;
+    clip-path: polygon(0 40%, 100% 30%, 100% 100%, 0 100%);
+    padding-right: 15px;
+    padding-bottom: 15px;
+    clip-path: block;
+  }
+
+  .horizontalLine {
+    width: 25%;
+  }
+  .textContainer {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .inputContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .flagContainer {
+    gap: 10px;
+  }
+
+  .horizontalLineOne {
+    width: 100px;
+  }
+  .horizontalLineTwo {
+    width: 150px;
+  }
+}

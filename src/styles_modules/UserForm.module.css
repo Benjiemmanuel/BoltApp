@@ -1,0 +1,167 @@
+.userformContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.userFormContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.titleMessage {
+  font-family: sans-serif;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.nameContainer {
+  width: 100%;
+}
+
+.formGroup {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-family: sans-serif;
+  width: 30%;
+  margin-bottom: 5px;
+}
+
+.inputFieldEmail,
+.inputField {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  transition: border-bottom-color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.inputFieldEmail:focus,
+.inputField:focus {
+  border-bottom-color: #f775a2; /* Change border color to pink on focus */
+}
+
+.submitButton {
+  background-color: #f775a2;
+  color: #f9f9f9;
+  border: none;
+  padding: 15px 20px;
+  font-size: 17px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #f15189;
+}
+
+/* Media Queries */
+
+/* Tablets and larger screens */
+@media (min-width: 600px) {
+  .userFormContainer {
+    width: 80%;
+  }
+
+  .titleMessage {
+    font-size: 18px;
+  }
+
+  .formGroup {
+    font-size: 16px;
+  }
+
+  .label {
+    width: 25%;
+  }
+
+  .inputFieldEmail,
+  .inputField {
+    padding: 12px;
+  }
+
+  .submitButton {
+    padding: 15px 25px;
+    font-size: 18px;
+  }
+}
+
+/* Desktops and larger screens */
+@media (min-width: 1024px) {
+  .userFormContainer {
+    display: block;
+  }
+
+  .titleMessage {
+    font-size: 20px;
+  }
+
+  .formGroup {
+    font-size: 18px;
+  }
+
+  .label {
+    width: 20%;
+  }
+
+  .inputFieldEmail,
+  .inputField {
+    padding: 15px;
+  }
+
+  .submitButton {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 599px) {
+  .userFormContainer {
+    width: 80%;
+  }
+
+  .titleMessage {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .formGroup {
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 12px;
+  }
+
+  .label {
+    width: 100%;
+  }
+
+  .inputFieldEmail {
+    padding: 0px;
+  }
+  .inputField {
+    padding: 5px;
+  }
+
+  .submitButton {
+    display: block;
+  }
+}

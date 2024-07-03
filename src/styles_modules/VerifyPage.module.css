@@ -1,0 +1,133 @@
+.overallVerifyContainer {
+  background-color: #f9f9f9;
+}
+.container {
+  display: flex;
+  position: fixed;
+  background-color: #f9f9f9;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.backArrow {
+  margin: 30px;
+  color: #040427;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.instructions {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ccc;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.phoneNumber {
+  font-weight: 100;
+  color: #040427;
+}
+
+.otpContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputField {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 60px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+.inputField:focus + .horizontaLineVerifyOne {
+  background-color: #f775a2;
+  outline-color: #f775a2;
+}
+.inputField:focus {
+  outline: 2px solid #f775a2; /* Change outline color to pink on focus */
+}
+.inputField:focus + .horizontaLineVerifyOne + .dot {
+  display: none; /* Hide the dot when input is focused */
+}
+.dot {
+  font-size: 24px;
+  color: #ccc;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.horizontaLineVerifyOne {
+  width: 200%;
+  height: 2px;
+  background-color: #ccc;
+  margin-top: 5px;
+}
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+    background-color: #f9f9f9;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding-bottom: 20px;
+  }
+
+  .otpContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+  }
+
+  .instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ccc;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 18px;
+  }
+  .inputField {
+    width: 40px; 
+    height: 40px; 
+    font-size: 24px; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+  }
+
+  .dot {
+    font-size: 24px;
+  color: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  }
+}
+.horizontaLineVerifyOne {
+  width: 160%;
+  display: flex;
+  height: 2px;
+  background-color: #ccc;
+  margin-top: 5px; /* Adjust spacing from input */
+}
