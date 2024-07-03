@@ -15,7 +15,7 @@ const WelcomePage = () => {
   }, [navigate]);
 
   return (
-    <div className={styles.LogoContainer}>
+    < div className={styles.LogoContainer}>
       <Logo />
     </div>
   );
